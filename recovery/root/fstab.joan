@@ -7,6 +7,7 @@
 
 #<src>						<mnt_point>	<type>	<mnt_flags and options>							<fs_mgr_flags>
 /dev/block/bootdevice/by-name/system		/system		ext4	ro,barrier=1,noatime							wait
+/dev/block/bootdevice/by-name/vendor		/vendor		ext4	ro,barrier=1,noatime							wait
 /dev/block/bootdevice/by-name/cache		/cache		ext4	discard,nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue	wait,check
 /dev/block/bootdevice/by-name/userdata		/data		ext4	discard,nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue	wait,check,encryptable=/dev/block/bootdevice/by-name/encrypt
 /devices/soc/c0a4900.sdhci/mmc_host*		auto		auto	nosuid,nodev								wait,encryptable=/dev/block/bootdevice/by-name/encrypt
